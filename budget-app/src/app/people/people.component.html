@@ -1,1 +1,18 @@
-<p>people works!</p>
+<div class="add-person-form">
+    <h3>Add New Person</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Person's Name:</label>
+        <input type="text" id="name" [(ngModel)]="newPerson.name" name="name" required>
+      </div>
+      <button type="submit">Add Person</button>
+    </form>
+  
+    <div class="person-list">
+      <h3>People</h3>
+      <ul>
+        <li *ngFor="let person of people">{{ person.name }}</li>
+      </ul>
+    </div>
+  </div>
+  

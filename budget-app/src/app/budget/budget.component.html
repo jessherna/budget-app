@@ -1,1 +1,23 @@
-<p>budget works!</p>
+<div class="add-budget-form">
+    <h3>Add New Budget</h3>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <label for="category">Category:</label>
+        <input type="text" id="category" [(ngModel)]="newBudget.category" name="category" required>
+      </div>
+      <div>
+        <label for="amount">Budget Amount:</label>
+        <input type="number" id="amount" [(ngModel)]="newBudget.amount" name="amount" required>
+      </div>
+      <div>
+        <label for="actual">Actual Spent:</label>
+        <input type="number" id="actual" [(ngModel)]="newBudget.actual" name="actual">
+      </div>
+      <div>
+        <label for="month">Month:</label>
+        <input type="month" id="month" [(ngModel)]="newBudget.month" name="month" required>
+      </div>
+      <button type="submit">Add Budget</button>
+    </form>
+  </div>
+  

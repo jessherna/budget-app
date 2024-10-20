@@ -14,7 +14,7 @@ export class PersonService {
 
   constructor() { }
 
-  getPersons(): Observable<Person[]> {
+  getPeople(): Observable<Person[]> {
     return of(this.people);
   }
 
