@@ -6,7 +6,7 @@ const Footer = () => {
         bottom: 0,
         width: '100%',
         backgroundColor: 'white',
-        padding: '10px',
+        padding: '2vh 0',
         color: 'black',
         height: '2%',
         display: 'flex',
